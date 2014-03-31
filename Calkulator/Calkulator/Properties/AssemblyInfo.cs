@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Управление общими сведениями о сборке осуществляется с помощью 
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("{EQYZ!!!")]
+[assembly: AssemblyTitle("Calkulator")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("{EQYZ!!!")]
+[assembly: AssemblyProduct("Calkulator")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("f2913ebb-fa94-42ad-b363-b77c313fbb8c")]
+[assembly: Guid("43c6026a-f81b-4479-8681-88c3efa9cef7")]
 
 // Сведения о версии сборки состоят из следующих четырех значений:
 //
