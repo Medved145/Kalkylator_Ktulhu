@@ -20,6 +20,8 @@ namespace Calkulator.BinaryOperations
                     return new Multiplication();
                 case"/":
                     return new Division();
+                case "*2":
+                    return new Involution();
                 default:
                     throw new ArgumentException("Неизвестная операция!", "operationName");
             }
