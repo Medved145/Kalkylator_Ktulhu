@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms.VisualStyles;
 
 namespace Calkulator.BinaryOperations
 {
@@ -20,8 +21,10 @@ namespace Calkulator.BinaryOperations
                     return new Multiplication();
                 case"/":
                     return new Division();
-                case "*2":
+                case "^":
                     return new Involution();
+                case "√":
+                    return new SquareRoot();
                 default:
                     throw new ArgumentException("Неизвестная операция!", "operationName");
             }

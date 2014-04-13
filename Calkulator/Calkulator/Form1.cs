@@ -27,5 +27,6 @@ namespace Calkulator
             IBinaryOperation calculator = BinaryOperationFactory.CreateBinaryOperation(((Button)sender).Text);
             textBox3.Text = calculator.Calculate(first, second);
         }
+
     }
 }

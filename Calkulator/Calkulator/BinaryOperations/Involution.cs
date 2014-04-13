@@ -1,10 +1,12 @@
-﻿namespace Calkulator.BinaryOperations
+﻿using System;
+
+namespace Calkulator.BinaryOperations
 {
     public class Involution : IBinaryOperation
     {
         public string Calculate(double first, double second)
         {
-            double result = first * first;
+            double result = Math.Pow(first, second);
             return result.ToString();
         }
     }
