@@ -25,6 +25,26 @@ namespace Calkulator.BinaryOperations
                     return new Involution();
                 case "√":
                     return new SquareRoot();
+                case "log (e)":
+                    return new NaturalLogarithm();
+                case "log (s)":
+                    return new Logarithm();
+                case "sin":
+                    return new Sine();
+                case "cos":
+                    return new Cosine();
+                case "tg":
+                    return new Tangent();
+                case "ctg":
+                    return new Cotangent();
+                case "asin":
+                    return new ArcSine();
+                case "acos":
+                    return new ArcCosine();
+                case "atg":
+                    return new ArcTangent();
+                case "actg":
+                    return new ArcCotangent();
                 default:
                     throw new ArgumentException("Неизвестная операция!", "operationName");
             }

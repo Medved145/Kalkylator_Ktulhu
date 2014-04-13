@@ -28,5 +28,17 @@ namespace Calkulator
             textBox3.Text = calculator.Calculate(first, second);
         }
 
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+        }
+
     }
 }

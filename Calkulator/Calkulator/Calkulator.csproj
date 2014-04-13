@@ -45,10 +45,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BinaryOperations\Addition.cs" />
+    <Compile Include="BinaryOperations\ArcCosine.cs" />
+    <Compile Include="BinaryOperations\ArcCotangent.cs" />
+    <Compile Include="BinaryOperations\ArcSine.cs" />
+    <Compile Include="BinaryOperations\ArcTangent.cs" />
     <Compile Include="BinaryOperations\BinaryOperationFactory.cs" />
+    <Compile Include="BinaryOperations\Cosine.cs" />
+    <Compile Include="BinaryOperations\Cotangent.cs" />
+    <Compile Include="BinaryOperations\Logarithm.cs" />
+    <Compile Include="BinaryOperations\NaturalLogarithm.cs" />
+    <Compile Include="BinaryOperations\Sinе.cs" />
     <Compile Include="BinaryOperations\SquareRoot.cs" />
     <Compile Include="BinaryOperations\Division.cs" />
     <Compile Include="BinaryOperations\Involution.cs" />
+    <Compile Include="BinaryOperations\Tangent.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
