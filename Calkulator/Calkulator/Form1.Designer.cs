@@ -194,7 +194,7 @@
             this.button9.TabIndex = 14;
             this.button9.Text = "log (e)";
             this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.BinaryCalculate);
+            this.button9.Click += new System.EventHandler(this.SingleCalculate);
             // 
             // button10
             // 
@@ -214,7 +214,7 @@
             this.button11.TabIndex = 16;
             this.button11.Text = "sin";
             this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.BinaryCalculate);
+            this.button11.Click += new System.EventHandler(this.SingleCalculate);
             // 
             // button12
             // 
@@ -224,7 +224,7 @@
             this.button12.TabIndex = 17;
             this.button12.Text = "cos";
             this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.BinaryCalculate);
+            this.button12.Click += new System.EventHandler(this.SingleCalculate);
             // 
             // button13
             // 
@@ -234,7 +234,7 @@
             this.button13.TabIndex = 18;
             this.button13.Text = "tg";
             this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.BinaryCalculate);
+            this.button13.Click += new System.EventHandler(this.SingleCalculate);
             // 
             // button14
             // 
@@ -244,7 +244,7 @@
             this.button14.TabIndex = 19;
             this.button14.Text = "ctg";
             this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.BinaryCalculate);
+            this.button14.Click += new System.EventHandler(this.SingleCalculate);
             // 
             // button15
             // 
@@ -254,7 +254,7 @@
             this.button15.TabIndex = 20;
             this.button15.Text = "asin";
             this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.BinaryCalculate);
+            this.button15.Click += new System.EventHandler(this.SingleCalculate);
             // 
             // button16
             // 
@@ -264,7 +264,7 @@
             this.button16.TabIndex = 21;
             this.button16.Text = "acos";
             this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.BinaryCalculate);
+            this.button16.Click += new System.EventHandler(this.SingleCalculate);
             // 
             // button17
             // 
@@ -274,7 +274,7 @@
             this.button17.TabIndex = 22;
             this.button17.Text = "atg";
             this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.BinaryCalculate);
+            this.button17.Click += new System.EventHandler(this.SingleCalculate);
             // 
             // button18
             // 
@@ -284,7 +284,7 @@
             this.button18.TabIndex = 23;
             this.button18.Text = "actg";
             this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.BinaryCalculate);
+            this.button18.Click += new System.EventHandler(this.SingleCalculate);
             // 
             // Form1
             // 

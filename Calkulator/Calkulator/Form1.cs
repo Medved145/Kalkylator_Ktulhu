@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Calkulator.BinaryOperations;
+using Calkulator.SingleOperations;
 
 namespace Calkulator
 {
@@ -25,7 +26,15 @@ namespace Calkulator
             double.TryParse(textBox1.Text, out first);
             double.TryParse(textBox2.Text, out second);
             IBinaryOperation calculator = BinaryOperationFactory.CreateBinaryOperation(((Button)sender).Text);
-            textBox3.Text = calculator.Calculate(first, second);
+            textBox3.Text = calculator.Calculate(first, second).ToString();
+        }
+
+        private void SingleCalculate(object sender, EventArgs e)
+        {
+            double first;
+            double.TryParse(textBox1.Text, out first);
+            ISingleOperation calculator = SingleOperationFactory.CreateSingleOperation(((Button)sender).Text);
+            textBox3.Text = calculator.Calculate(first).ToString();
         }
 
         private void button7_Click(object sender, EventArgs e)

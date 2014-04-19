@@ -4,10 +4,10 @@ namespace Calkulator.BinaryOperations
 {
     public class Involution : IBinaryOperation
     {
-        public string Calculate(double first, double second)
+        public double Calculate(double first, double second)
         {
             double result = Math.Pow(first, second);
-            return result.ToString();
+            return result;
         }
     }
 }
