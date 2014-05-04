@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Calkulator.BinaryOperations;
 using Calkulator.SingleOperations;
 using NUnit.Framework;
 
-namespace Calkulator.Tests.BinaryOperations
+namespace Calkulator.Tests.SingleOperation
 {
     [TestFixture]
     public class ArcCosineTests
@@ -16,8 +11,8 @@ namespace Calkulator.Tests.BinaryOperations
         public void CalculationTest()
         {
             ISingleOperation calculator = SingleOperationFactory.CreateSingleOperation("acos");
-            double result = calculator.Calculate(0);
-            Assert.AreEqual(90, result);
+            double result = calculator.Calculate(Math.Sqrt(3)/2);
+            Assert.AreEqual(30, result, 0.1);
         }
     }
 }

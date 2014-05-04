@@ -4,13 +4,13 @@ using NUnit.Framework;
 namespace Calkulator.Tests.BinaryOperations
 {
     [TestFixture]
-    public class DivisionTests
+    public class LogarithmTests
     {
         [Test]
         public void CalculationTest()
         {
-            IBinaryOperation calculator = BinaryOperationFactory.CreateBinaryOperation("/");
-            double result = calculator.Calculate(15, 5);
+            IBinaryOperation calculator = BinaryOperationFactory.CreateBinaryOperation("log (s)");
+            double result = calculator.Calculate(8, 2);
             Assert.AreEqual(3, result);
         }
     }

@@ -6,7 +6,7 @@ namespace Calkulator.SingleOperations
     {
         public double Calculate(double first)
         {
-            double result = Math.Pow(Math.Atan(first), (-1.0));
+            double result = Math.Atan(first)+(2/3)*Math.Atan(1);
             result = result * 180 / Math.PI;
             return result;
         }

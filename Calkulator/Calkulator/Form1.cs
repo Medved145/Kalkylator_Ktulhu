@@ -34,7 +34,7 @@ namespace Calkulator
             double first;
             double.TryParse(textBox1.Text, out first);
             ISingleOperation calculator = SingleOperationFactory.CreateSingleOperation(((Button)sender).Text);
-            textBox3.Text = calculator.Calculate(first).ToString();
+            textBox3.Text = calculator.Calculate(first).ToString() + "°";
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -44,9 +44,9 @@ namespace Calkulator
 
         private void button8_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
+            textBox1.Text = string.Empty;
+            textBox2.Text = string.Empty;
+            textBox3.Text = string.Empty;
         }
 
     }
