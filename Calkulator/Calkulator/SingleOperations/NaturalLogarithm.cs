@@ -6,6 +6,10 @@ namespace Calkulator.SingleOperations
     {
         public double Calculate(double first)
         {
+            if (first <= 0)
+            {
+                throw new Exception("Натуральный логарифм сломался");
+            }
             double result = Math.Log(first, Math.E);
             return result;
         }

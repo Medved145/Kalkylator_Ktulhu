@@ -1,6 +1,6 @@
 ﻿namespace Calkulator.BinaryOperations
 {
-    class Substraction:IBinaryOperation
+    class Substraction : IBinaryOperation
     {
         public double Calculate(double first, double second)
         {

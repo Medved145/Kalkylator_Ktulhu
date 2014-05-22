@@ -52,6 +52,8 @@
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -286,12 +288,34 @@
             this.button18.UseVisualStyleBackColor = true;
             this.button18.Click += new System.EventHandler(this.SingleCalculate);
             // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(12, 236);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(28, 28);
+            this.button19.TabIndex = 24;
+            this.button19.Text = "<";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.SortingSort);
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(46, 236);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(28, 28);
+            this.button20.TabIndex = 25;
+            this.button20.Text = ">";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.SortingSort);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(184, 340);
             this.ControlBox = false;
+            this.Controls.Add(this.button20);
+            this.Controls.Add(this.button19);
             this.Controls.Add(this.button18);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button16);
@@ -349,6 +373,8 @@
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button20;
     }
 }
 

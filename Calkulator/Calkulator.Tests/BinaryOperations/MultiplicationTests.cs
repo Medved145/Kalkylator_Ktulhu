@@ -1,5 +1,4 @@
-﻿using System;
-using Calkulator.BinaryOperations;
+﻿using Calkulator.BinaryOperations;
 using NUnit.Framework;
 
 namespace Calkulator.Tests.BinaryOperations

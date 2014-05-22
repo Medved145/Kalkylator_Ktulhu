@@ -43,14 +43,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BinaryOperations\AdditionTests.cs" />
+    <Compile Include="SingleOperation\CotangentTests.cs" />
     <Compile Include="BinaryOperations\InvolutionTests.cs" />
     <Compile Include="BinaryOperations\LogarithmTests.cs" />
     <Compile Include="BinaryOperations\MultiplicationTests.cs" />
+    <Compile Include="BinaryOperations\SquareRootTests.cs" />
+    <Compile Include="BinaryOperations\SubstractionTests.cs" />
     <Compile Include="SingleOperation\ArcCosineTests.cs" />
     <Compile Include="BinaryOperations\DivisionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SingleOperation\ArcCotangentTests.cs" />
+    <Compile Include="SingleOperation\ArcSineTests.cs" />
+    <Compile Include="SingleOperation\ArcTangentTests.cs" />
+    <Compile Include="SingleOperation\CosineTests.cs" />
     <Compile Include="SingleOperation\NaturalLogarithmTests.cs" />
+    <Compile Include="SingleOperation\Sine.cs" />
+    <Compile Include="SingleOperation\TangentTests.cs" />
+    <Compile Include="SortingOperations\SortingAscendingTests.cs" />
+    <Compile Include="SortingOperations\SortingDescendingTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Calkulator\Calkulator.csproj">

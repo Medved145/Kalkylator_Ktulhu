@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Calkulator.BinaryOperations;
 using Calkulator.SingleOperations;
+using Calkulator.SortingOperations;
 
 namespace Calkulator
 {
@@ -22,19 +17,46 @@ namespace Calkulator
 
         private void BinaryCalculate(object sender, EventArgs e)
         {
-            double first, second;
-            double.TryParse(textBox1.Text, out first);
-            double.TryParse(textBox2.Text, out second);
-            IBinaryOperation calculator = BinaryOperationFactory.CreateBinaryOperation(((Button)sender).Text);
-            textBox3.Text = calculator.Calculate(first, second).ToString();
+            try
+            {
+                double first = Convert.ToDouble(textBox1.Text); 
+                double second = Convert.ToDouble(textBox2.Text);
+                IBinaryOperation calculator = BinaryOperationFactory.CreateBinaryOperation(((Button) sender).Text);
+                textBox3.Text = calculator.Calculate(first, second).ToString();
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
         }
 
         private void SingleCalculate(object sender, EventArgs e)
         {
-            double first;
-            double.TryParse(textBox1.Text, out first);
-            ISingleOperation calculator = SingleOperationFactory.CreateSingleOperation(((Button)sender).Text);
-            textBox3.Text = calculator.Calculate(first).ToString() + "°";
+            try
+            {
+                double first=Convert.ToDouble(textBox1.Text);
+                ISingleOperation calculator = SingleOperationFactory.CreateSingleOperation(((Button) sender).Text);
+                textBox3.Text = calculator.Calculate(first).ToString() + "°";
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
+        }
+
+        private void SortingSort(object sender, EventArgs e)
+        {
+            try
+            {
+                string[] mass = textBox1.Text.Split(' ');
+                int[] array = mass.Select(m => Convert.ToInt32(m)).ToArray();
+                ISortingOperation sort = SortingOperationFactory.CreateSortingOperation(((Button) sender).Text);
+                textBox3.Text = string.Join(" ", sort.Sort(array));
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
         }
 
         private void button7_Click(object sender, EventArgs e)
